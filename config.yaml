@@ -1,0 +1,61 @@
+# Amazon Bestselling Books MLOps Configuration
+
+project:
+  name: Amazon_Bestseller_Genre_Prediction
+  target: Genre
+  description: Classification of Amazon Top-50 Bestsellers into Fiction vs Non Fiction
+
+data:
+  raw_path: data/raw/amazon_bestsellers.csv
+  alt_raw_path: bestsellers with categories.csv
+  processed_dir: data/processed
+  target_column: Genre
+  id_column: Name
+  raw_features:
+    - User Rating
+    - Reviews
+    - Price
+    - Year
+  engineered_features:
+    - User Rating
+    - Reviews_Log
+    - Price
+    - Year
+
+split:
+  test_size: 0.20
+  random_state: 42
+  stratify: true
+
+model:
+  algorithm: RandomForestClassifier
+  n_estimators: 100
+  max_depth: 10
+  random_state: 42
+  class_weight: balanced
+
+mlflow:
+  tracking_uri: "sqlite:///mlflow.db"
+  experiment_name: Amazon_Bestseller_Genre_Prediction
+
+registry:
+  model_name: Amazon_Bestseller_Production_Model
+  decision_metric: f1_weighted
+
+quality_gate:
+  metric: f1_weighted
+  minimum_value: 0.70
+
+lab9:
+  repetitions: 3
+
+paths:
+  scaler: models/scaler.pkl
+  preprocessor: models/preprocessor.pkl
+  model: models/production_model.pkl
+  baseline_model: models/baseline_model.pkl
+  evaluation_report: reports/evaluation_report.json
+  quality_gate_report: reports/quality_gate_report.json
+  failure_report: reports/failure_report.json
+  inference_output: outputs/inference_predictions.csv
+

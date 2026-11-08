@@ -1,0 +1,22 @@
+# Docker ignore rules for Amazon MLOps API
+.git/
+.github/
+.lab9_backup/
+data/
+artifacts/
+reports/
+outputs/
+logs/
+notebooks/
+tests/
+mlruns/
+mlflow.db*
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+*.md
+

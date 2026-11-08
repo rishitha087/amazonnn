@@ -1,0 +1,17 @@
+# Git ignore for Amazon MLOps Project
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+mlflow.db
+mlruns/
+*.egg-info/
+dist/
+build/
+.env
+.lab9_backup/
+logs/
+outputs/inference_predictions.csv

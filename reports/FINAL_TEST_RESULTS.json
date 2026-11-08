@@ -1,0 +1,73 @@
+{
+    "test_suite": "Amazon MLOps Project — Complete Test Results",
+    "executed_at": "2026-11-08T18:45:05Z",
+    "platform": "win32",
+    "python": "3.12.6",
+    "pytest_version": "9.1.1",
+    "summary": {
+        "total_collected": 35,
+        "passed": 35,
+        "failed": 0,
+        "warnings": 1,
+        "execution_time_seconds": 92.99
+    },
+    "api_tests": {
+        "file": "tests/test_api.py",
+        "count": 23,
+        "passed": 23,
+        "failed": 0,
+        "tests": [
+            {"name": "test_health_check", "status": "PASSED"},
+            {"name": "test_metadata_endpoint", "status": "PASSED"},
+            {"name": "test_predict_single_valid_nonfiction", "status": "PASSED"},
+            {"name": "test_predict_single_valid_fiction", "status": "PASSED"},
+            {"name": "test_predict_single_zero_price", "status": "PASSED"},
+            {"name": "test_predict_single_zero_reviews", "status": "PASSED"},
+            {"name": "test_predict_single_max_rating", "status": "PASSED"},
+            {"name": "test_predict_single_min_rating", "status": "PASSED"},
+            {"name": "test_predict_negative_rating_fails", "status": "PASSED"},
+            {"name": "test_predict_excessive_rating_fails", "status": "PASSED"},
+            {"name": "test_predict_negative_reviews_fails", "status": "PASSED"},
+            {"name": "test_predict_negative_price_fails", "status": "PASSED"},
+            {"name": "test_predict_year_too_early_fails", "status": "PASSED"},
+            {"name": "test_predict_missing_rating_fails", "status": "PASSED"},
+            {"name": "test_predict_missing_reviews_fails", "status": "PASSED"},
+            {"name": "test_predict_missing_price_fails", "status": "PASSED"},
+            {"name": "test_predict_missing_year_fails", "status": "PASSED"},
+            {"name": "test_predict_string_rating_fails", "status": "PASSED"},
+            {"name": "test_predict_extra_fields_ignored", "status": "PASSED"},
+            {"name": "test_predict_probabilities_sum_to_one", "status": "PASSED"},
+            {"name": "test_predict_batch_success", "status": "PASSED"},
+            {"name": "test_predict_batch_empty_fails", "status": "PASSED"},
+            {"name": "test_unknown_route_returns_404", "status": "PASSED"}
+        ]
+    },
+    "performance_tests": {
+        "file": "tests/test_performance.py",
+        "count": 6,
+        "passed": 6,
+        "failed": 0,
+        "tests": [
+            {"name": "test_single_request_latency", "status": "PASSED"},
+            {"name": "test_repeated_inference_average_latency", "status": "PASSED"},
+            {"name": "test_batch_request_latency", "status": "PASSED"},
+            {"name": "test_prediction_consistency", "status": "PASSED"},
+            {"name": "test_error_handling_performance", "status": "PASSED"},
+            {"name": "test_throughput_stability", "status": "PASSED"}
+        ]
+    },
+    "pipeline_tests": {
+        "file": "tests/test_pipeline.py",
+        "count": 6,
+        "passed": 6,
+        "failed": 0,
+        "tests": [
+            {"name": "test_raw_dataset_exists_and_valid", "status": "PASSED"},
+            {"name": "test_preprocessing_produces_clean_arrays", "status": "PASSED"},
+            {"name": "test_model_training_and_serialization", "status": "PASSED"},
+            {"name": "test_evaluation_metrics_and_error_exports", "status": "PASSED"},
+            {"name": "test_predict_pipeline_single_and_batch", "status": "PASSED"},
+            {"name": "test_pipeline_reproducibility", "status": "PASSED"}
+        ]
+    }
+}

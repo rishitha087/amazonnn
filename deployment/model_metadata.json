@@ -1,0 +1,26 @@
+{
+    "model_name": "Amazon_Bestseller_Production_Model",
+    "task": "Binary Classification (Book Genre)",
+    "framework": "scikit-learn",
+    "classes": {
+        "0": "Fiction",
+        "1": "Non Fiction"
+    },
+    "input_features": [
+        "User Rating",
+        "Reviews_Log",
+        "Price",
+        "Year"
+    ],
+    "feature_count": 4,
+    "metrics": {
+        "accuracy": 0.7909090909090909,
+        "f1_weighted": 0.7858981976629035,
+        "roc_auc": 0.873991935483871
+    },
+    "artifacts": [
+        "production_model.pkl",
+        "scaler.pkl",
+        "preprocessor.pkl"
+    ]
+}

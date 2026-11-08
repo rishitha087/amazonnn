@@ -1,0 +1,85 @@
+{
+    "project": "Amazon Bestselling Books Genre Classification",
+    "timestamp": "2026-11-08T18:50:00Z",
+    "environment": {
+        "python_version": "3.12.6",
+        "platform": "Windows 11 (win32)",
+        "mlflow_backend": "sqlite:///mlflow.db"
+    },
+    "dataset": {
+        "name": "Amazon Top-50 Bestselling Books 2009-2019",
+        "path": "data/raw/amazon_bestsellers.csv",
+        "total_rows": 550,
+        "total_columns": 7,
+        "features": ["User Rating", "Reviews_Log", "Price", "Year"],
+        "target": "Genre",
+        "classes": {"0": "Fiction", "1": "Non Fiction"},
+        "train_samples": 440,
+        "test_samples": 110
+    },
+    "champion_model": {
+        "algorithm": "RandomForestClassifier",
+        "registry_name": "Amazon_Bestseller_Production_Model",
+        "registry_version": "1",
+        "registry_stage": "Production",
+        "run_id": "a06d784a4d00470ab2afcc5ebad1717f",
+        "hyperparameters": {
+            "n_estimators": 100,
+            "max_depth": 5,
+            "random_state": 42
+        }
+    },
+    "evaluation_metrics": {
+        "accuracy": 0.7909,
+        "precision_weighted": 0.7980,
+        "recall_weighted": 0.7909,
+        "f1_score_weighted": 0.7859,
+        "roc_auc": 0.8740,
+        "misclassifications": 23,
+        "test_samples": 110
+    },
+    "quality_gate": {
+        "status": "PASSED",
+        "min_f1_weighted": 0.70,
+        "actual_f1_weighted": 0.7859,
+        "min_accuracy": 0.65,
+        "actual_accuracy": 0.7909
+    },
+    "test_results": {
+        "total_tests": 35,
+        "passed": 35,
+        "failed": 0,
+        "api_tests": 23,
+        "performance_tests": 6,
+        "pipeline_tests": 6,
+        "execution_time_seconds": 92.99
+    },
+    "failure_injection": {
+        "total_scenarios": 5,
+        "repetitions_per_scenario": 3,
+        "total_runs": 15,
+        "passed": 15,
+        "failed": 0,
+        "recovery_rate_percent": 100.0
+    },
+    "labs_completed": {
+        "LAB1": {"status": "COMPLETE", "title": "ML Project Initialization and Dataset Preparation"},
+        "LAB2": {"status": "COMPLETE", "title": "Baseline Model Development and Evaluation"},
+        "LAB3": {"status": "COMPLETE", "title": "Git-Based Version Control and Collaborative ML Workflows"},
+        "LAB4": {"status": "COMPLETE", "title": "Experiment Tracking and Reproducibility Using MLflow"},
+        "LAB5": {"status": "COMPLETE", "title": "Data Validation and Reproducible ML Pipelines"},
+        "LAB6": {"status": "COMPLETE", "title": "Model Registry and Version Management"},
+        "LAB7": {"status": "COMPLETE", "title": "ML Pipeline Engineering"},
+        "LAB8": {"status": "COMPLETE", "title": "Pipeline Automation and CI Workflows Using GitHub Actions"},
+        "LAB9": {"status": "COMPLETE", "title": "Pipeline Failure Handling and Recovery"},
+        "LAB10": {"status": "COMPLETE", "title": "ML Model Serving and API Engineering Using FastAPI"},
+        "LAB11": {"status": "COMPLETE", "title": "Containerization and Deployment Using Docker and Kubernetes"}
+    },
+    "infrastructure": {
+        "dockerfile": "Dockerfile",
+        "kubernetes_deployment": "k8s/deployment.yaml",
+        "kubernetes_service": "k8s/service.yaml",
+        "ci_workflow": ".github/workflows/lab8_ci.yml",
+        "resilience_workflow": ".github/workflows/lab9_failure_tests.yml"
+    }
+}
