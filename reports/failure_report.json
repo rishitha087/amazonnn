@@ -1,0 +1,146 @@
+{
+    "suite": "Lab 9 Failure Injection and Automated Self-Healing",
+    "total_scenarios": 5,
+    "repetitions_per_scenario": 3,
+    "total_test_runs": 15,
+    "successful_recoveries": 15,
+    "recovery_rate_percent": 100.0,
+    "average_duration_ms": 29.12,
+    "test_results": [
+        {
+            "scenario": "SCENARIO_1_MISSING_RAW_DATASET",
+            "repetition": 1,
+            "detected": true,
+            "recovered": true,
+            "error_detected": "FileNotFoundError: Dataset missing at C:\\Users\\rishi\\Desktop\\mlopssprooo\\amazooonnnn\\data\\raw\\amazon_bestsellers.csv",
+            "duration_ms": 2.7,
+            "status": "PASSED"
+        },
+        {
+            "scenario": "SCENARIO_1_MISSING_RAW_DATASET",
+            "repetition": 2,
+            "detected": true,
+            "recovered": true,
+            "error_detected": "FileNotFoundError: Dataset missing at C:\\Users\\rishi\\Desktop\\mlopssprooo\\amazooonnnn\\data\\raw\\amazon_bestsellers.csv",
+            "duration_ms": 3.13,
+            "status": "PASSED"
+        },
+        {
+            "scenario": "SCENARIO_1_MISSING_RAW_DATASET",
+            "repetition": 3,
+            "detected": true,
+            "recovered": true,
+            "error_detected": "FileNotFoundError: Dataset missing at C:\\Users\\rishi\\Desktop\\mlopssprooo\\amazooonnnn\\data\\raw\\amazon_bestsellers.csv",
+            "duration_ms": 3.32,
+            "status": "PASSED"
+        },
+        {
+            "scenario": "SCENARIO_2_CORRUPT_COLUMN_SCHEMA",
+            "repetition": 1,
+            "detected": true,
+            "recovered": true,
+            "error_detected": "'columns'",
+            "duration_ms": 45.95,
+            "status": "PASSED"
+        },
+        {
+            "scenario": "SCENARIO_2_CORRUPT_COLUMN_SCHEMA",
+            "repetition": 2,
+            "detected": true,
+            "recovered": true,
+            "error_detected": "'columns'",
+            "duration_ms": 83.25,
+            "status": "PASSED"
+        },
+        {
+            "scenario": "SCENARIO_2_CORRUPT_COLUMN_SCHEMA",
+            "repetition": 3,
+            "detected": true,
+            "recovered": true,
+            "error_detected": "'columns'",
+            "duration_ms": 59.68,
+            "status": "PASSED"
+        },
+        {
+            "scenario": "SCENARIO_3_INVALID_DATATYPE_INJECTION",
+            "repetition": 1,
+            "detected": true,
+            "recovered": true,
+            "error_detected": "Invalid value 'EXCELLENT_BOOK' for dtype 'float64'",
+            "duration_ms": 15.34,
+            "status": "PASSED"
+        },
+        {
+            "scenario": "SCENARIO_3_INVALID_DATATYPE_INJECTION",
+            "repetition": 2,
+            "detected": true,
+            "recovered": true,
+            "error_detected": "Invalid value 'EXCELLENT_BOOK' for dtype 'float64'",
+            "duration_ms": 15.08,
+            "status": "PASSED"
+        },
+        {
+            "scenario": "SCENARIO_3_INVALID_DATATYPE_INJECTION",
+            "repetition": 3,
+            "detected": true,
+            "recovered": true,
+            "error_detected": "Invalid value 'EXCELLENT_BOOK' for dtype 'float64'",
+            "duration_ms": 11.99,
+            "status": "PASSED"
+        },
+        {
+            "scenario": "SCENARIO_4_OUT_OF_BOUNDS_VALUES",
+            "repetition": 1,
+            "detected": true,
+            "recovered": true,
+            "error_detected": "RangeError: User Rating out of bounds [0.0, 5.0]",
+            "duration_ms": 42.49,
+            "status": "PASSED"
+        },
+        {
+            "scenario": "SCENARIO_4_OUT_OF_BOUNDS_VALUES",
+            "repetition": 2,
+            "detected": true,
+            "recovered": true,
+            "error_detected": "RangeError: User Rating out of bounds [0.0, 5.0]",
+            "duration_ms": 66.29,
+            "status": "PASSED"
+        },
+        {
+            "scenario": "SCENARIO_4_OUT_OF_BOUNDS_VALUES",
+            "repetition": 3,
+            "detected": true,
+            "recovered": true,
+            "error_detected": "RangeError: User Rating out of bounds [0.0, 5.0]",
+            "duration_ms": 72.24,
+            "status": "PASSED"
+        },
+        {
+            "scenario": "SCENARIO_5_MISSING_MODEL_ARTIFACT",
+            "repetition": 1,
+            "detected": true,
+            "recovered": true,
+            "error_detected": "ModelArtifactMissingError: production_model.pkl not found",
+            "duration_ms": 5.51,
+            "status": "PASSED"
+        },
+        {
+            "scenario": "SCENARIO_5_MISSING_MODEL_ARTIFACT",
+            "repetition": 2,
+            "detected": true,
+            "recovered": true,
+            "error_detected": "ModelArtifactMissingError: production_model.pkl not found",
+            "duration_ms": 4.02,
+            "status": "PASSED"
+        },
+        {
+            "scenario": "SCENARIO_5_MISSING_MODEL_ARTIFACT",
+            "repetition": 3,
+            "detected": true,
+            "recovered": true,
+            "error_detected": "ModelArtifactMissingError: production_model.pkl not found",
+            "duration_ms": 5.77,
+            "status": "PASSED"
+        }
+    ]
+}

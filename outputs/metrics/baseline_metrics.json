@@ -1,0 +1,11 @@
+{
+    "model": "RandomForest_Baseline",
+    "dataset": "Amazon Bestselling Books",
+    "target": "Genre",
+    "test_samples": 110,
+    "accuracy": 0.7909090909090909,
+    "precision_weighted": 0.7979805459257513,
+    "recall_weighted": 0.7909090909090909,
+    "f1_weighted": 0.7858981976629035,
+    "roc_auc": 0.8652553763440861
+}

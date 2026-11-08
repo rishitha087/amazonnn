@@ -1,0 +1,25 @@
+{
+    "status": "PASSED",
+    "X_train_shape": [
+        440,
+        4
+    ],
+    "X_test_shape": [
+        110,
+        4
+    ],
+    "y_train_shape": [
+        440
+    ],
+    "y_test_shape": [
+        110
+    ],
+    "train_mean": -7.890153177279237e-16,
+    "train_std": 1.0,
+    "nan_count": 0,
+    "inf_count": 0,
+    "classes": [
+        0,
+        1
+    ]
+}

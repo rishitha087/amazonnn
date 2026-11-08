@@ -1,0 +1,35 @@
+{
+    "dataset_name": "Amazon Top 50 Bestselling Books (2009-2019)",
+    "rows": 550,
+    "columns": 7,
+    "column_names": [
+        "Name",
+        "Author",
+        "User Rating",
+        "Reviews",
+        "Price",
+        "Year",
+        "Genre"
+    ],
+    "target_column": "Genre",
+    "target_distribution": {
+        "Non Fiction": 310,
+        "Fiction": 240
+    },
+    "missing_values": {
+        "Name": 0,
+        "Author": 0,
+        "User Rating": 0,
+        "Reviews": 0,
+        "Price": 0,
+        "Year": 0,
+        "Genre": 0
+    },
+    "duplicate_rows": 0,
+    "raw_features": [
+        "User Rating",
+        "Reviews",
+        "Price",
+        "Year"
+    ]
+}

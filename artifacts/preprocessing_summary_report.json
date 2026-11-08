@@ -1,0 +1,18 @@
+{
+    "dataset": "Amazon Bestselling Books (2009-2019)",
+    "train_samples": 440,
+    "test_samples": 110,
+    "features": [
+        "User Rating",
+        "Reviews_Log",
+        "Price",
+        "Year"
+    ],
+    "feature_dim": 4,
+    "class_mapping": {
+        "Fiction": 0,
+        "Non Fiction": 1
+    },
+    "test_size": 0.2,
+    "random_state": 42
+}

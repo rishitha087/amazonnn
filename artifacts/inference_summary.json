@@ -1,0 +1,9 @@
+{
+    "timestamp": "2026-11-08T18:43:04Z",
+    "model_source": "MLflow Registry (models:/Amazon_Bestseller_Production_Model/Production)",
+    "batch_size": 110,
+    "latency_ms": 448.69,
+    "accuracy_on_batch": 0.7909,
+    "predicted_fiction_count": 37,
+    "predicted_nonfiction_count": 73
+}

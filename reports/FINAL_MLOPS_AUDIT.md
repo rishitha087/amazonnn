@@ -169,3 +169,4 @@ PASSED  tests/test_pipeline.py (6 tests)
 | `.github/workflows/lab9_failure_tests.yml` | Weekly resilience schedule |
 | `config.yaml` | Centralized YAML configuration |
 | `requirements-api.txt` | Minimal API dependencies |
+

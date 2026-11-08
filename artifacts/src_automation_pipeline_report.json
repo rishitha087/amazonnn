@@ -1,0 +1,106 @@
+{
+    "pipeline_name": "Amazon Bestsellers Comprehensive 'src' Automation Pipeline",
+    "execution_timestamp": "2026-10-08T07:49:14.011632+00:00",
+    "overall_status": "SUCCESS",
+    "total_duration_seconds": 84.12,
+    "stages_executed": 12,
+    "stages_total": 12,
+    "stages": [
+        {
+            "stage": "step_01_validate_data",
+            "name": "Data Quality & Schema Validation",
+            "script": "validate_data.py",
+            "status": "PASSED",
+            "return_code": 0,
+            "duration_seconds": 2.55
+        },
+        {
+            "stage": "step_02_preprocess",
+            "name": "Feature Engineering & Data Preprocessing",
+            "script": "preprocess.py",
+            "status": "PASSED",
+            "return_code": 0,
+            "duration_seconds": 2.81
+        },
+        {
+            "stage": "step_03_preprocess_pipeline",
+            "name": "Production Preprocessor Pipeline",
+            "script": "preprocess_pipeline.py",
+            "status": "PASSED",
+            "return_code": 0,
+            "duration_seconds": 1.7
+        },
+        {
+            "stage": "step_04_validate_outputs",
+            "name": "Preprocessing Output Validation",
+            "script": "validate_outputs.py",
+            "status": "PASSED",
+            "return_code": 0,
+            "duration_seconds": 0.14
+        },
+        {
+            "stage": "step_05_train_baseline",
+            "name": "Baseline Model Training",
+            "script": "train.py",
+            "status": "PASSED",
+            "return_code": 0,
+            "duration_seconds": 1.88
+        },
+        {
+            "stage": "step_06_evaluate_baseline",
+            "name": "Baseline Model Evaluation",
+            "script": "evaluate.py",
+            "status": "PASSED",
+            "return_code": 0,
+            "duration_seconds": 1.62
+        },
+        {
+            "stage": "step_07_train_mlflow",
+            "name": "MLflow Experiment Tracking & Grid Search",
+            "script": "train_mlflow.py",
+            "status": "PASSED",
+            "return_code": 0,
+            "duration_seconds": 56.42
+        },
+        {
+            "stage": "step_08_validate_reproducibility",
+            "name": "Pipeline Determinism & Reproducibility",
+            "script": "validate_reproducibility.py",
+            "status": "PASSED",
+            "return_code": 0,
+            "duration_seconds": 1.81
+        },
+        {
+            "stage": "step_09_train_registry",
+            "name": "Model Registry Registration",
+            "script": "train_registry.py",
+            "status": "PASSED",
+            "return_code": 0,
+            "duration_seconds": 9.32
+        },
+        {
+            "stage": "step_10_automate_lifecycle",
+            "name": "Champion / Challenger Lifecycle Automation",
+            "script": "automate_lifecycle.py",
+            "status": "PASSED",
+            "return_code": 0,
+            "duration_seconds": 2.43
+        },
+        {
+            "stage": "step_11_generate_registry_report",
+            "name": "Production Deployment Governance Report",
+            "script": "generate_registry_report.py",
+            "status": "PASSED",
+            "return_code": 0,
+            "duration_seconds": 1.88
+        },
+        {
+            "stage": "step_12_predict_inference",
+            "name": "Production Inference Engine Demo",
+            "script": "predict.py",
+            "status": "PASSED",
+            "return_code": 0,
+            "duration_seconds": 1.54
+        }
+    ]
+}

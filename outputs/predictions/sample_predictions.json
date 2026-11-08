@@ -1,0 +1,24 @@
+{
+    "specified_sample": {
+        "input": {
+            "User Rating": 4.7,
+            "Reviews": 15000,
+            "Price": 15,
+            "Year": 2020
+        },
+        "prediction": {
+            "record_index": 0,
+            "predicted_class_id": 1,
+            "predicted_genre": "Non Fiction",
+            "confidence": 0.7295,
+            "probability_non_fiction": 0.7295
+        }
+    },
+    "unseen_test_sample": {
+        "title": "Whose Boat Is This Boat?: Comments That Don't Help in the Aftermath of a Hurricane",
+        "author": "The Staff of The Late Show with\u0085",
+        "actual_genre": "Non Fiction",
+        "predicted_genre": "Non Fiction",
+        "confidence": 0.8871
+    }
+}

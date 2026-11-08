@@ -110,3 +110,4 @@ Health endpoint response:
 
 ### 8. RESULT & CONCLUSION
 The Amazon Bestseller Genre Prediction API was successfully containerized using Docker with security hardening, and Kubernetes manifests were created for high-availability production deployment. The system supports 2-replica pod execution with automated health probing and rolling updates.
+

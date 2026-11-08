@@ -1,0 +1,18 @@
+Name,Author,User Rating,Reviews,Price,Year,Genre,Actual_Genre,Predicted_Genre,Predicted_Prob_NonFiction
+Little Fires Everywhere,Celeste Ng,4.5,25706,12,2018,Fiction,Fiction,Non Fiction,0.6
+Game of Thrones Boxed Set: A Game of Thrones/A Clash of Kings/A Storm of Swords/A Feast for Crows,George R.R. Martin,4.6,5594,5,2012,Fiction,Fiction,Non Fiction,0.61
+Game of Thrones Boxed Set: A Game of Thrones/A Clash of Kings/A Storm of Swords/A Feast for Crows,George R.R. Martin,4.6,5594,5,2013,Fiction,Fiction,Non Fiction,0.72
+The Paris Wife: A Novel,Paula McLain,4.3,3759,16,2011,Fiction,Fiction,Non Fiction,0.88
+The Racketeer,John Grisham,4.3,14493,18,2012,Fiction,Fiction,Non Fiction,0.69
+Grey: Fifty Shades of Grey as Told by Christian (Fifty Shades of Grey Series),E L James,4.4,25624,14,2015,Fiction,Fiction,Non Fiction,0.58
+"The Third Wheel (Diary of a Wimpy Kid, Book 7)",Jeff Kinney,4.7,6377,7,2012,Fiction,Fiction,Non Fiction,0.795
+Fifty Shades Trilogy (Fifty Shades of Grey / Fifty Shades Darker / Fifty Shades Freed),E L James,4.5,13964,32,2012,Fiction,Fiction,Non Fiction,0.73
+Ultimate Sticker Book: Frozen: More Than 60 Reusable Full-Color Stickers,DK,4.5,2586,5,2014,Fiction,Fiction,Non Fiction,0.885
+Pokémon Deluxe Essential Handbook: The Need-to-Know Stats and Facts on Over 700 Pokémon,Scholastic,4.7,3503,9,2016,Fiction,Fiction,Non Fiction,0.915
+Rush Revere and the First Patriots: Time-Travel Adventures With Exceptional Americans (2),Rush Limbaugh,4.9,3836,12,2014,Fiction,Fiction,Non Fiction,0.585
+The Guardians: A Novel,John Grisham,4.5,13609,14,2019,Fiction,Fiction,Non Fiction,0.9
+1984 (Signet Classics),George Orwell,4.7,21424,6,2017,Fiction,Fiction,Non Fiction,0.735
+Joyland (Hard Case Crime),Stephen King,4.5,4748,12,2013,Fiction,Fiction,Non Fiction,0.84
+"The House of Hades (Heroes of Olympus, Book 4)",Rick Riordan,4.8,6982,14,2013,Fiction,Fiction,Non Fiction,0.525
+The Twilight Saga Collection,Stephenie Meyer,4.7,3801,82,2009,Fiction,Fiction,Non Fiction,0.74
+Cutting for Stone,Abraham Verghese,4.6,4866,11,2011,Fiction,Fiction,Non Fiction,0.695

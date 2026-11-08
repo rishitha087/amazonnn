@@ -1,0 +1,17 @@
+{
+    "model_name": "Amazon_Bestseller_Production_Model",
+    "run_id": "a06d784a4d00470ab2afcc5ebad1717f",
+    "metrics": {
+        "accuracy": 0.7909090909090909,
+        "precision_weighted": 0.7979805459257513,
+        "recall_weighted": 0.7909090909090909,
+        "f1_score_weighted": 0.7858981976629035,
+        "roc_auc": 0.873991935483871
+    },
+    "hyperparameters": {
+        "n_estimators": 100,
+        "max_depth": 10,
+        "random_state": 42
+    },
+    "model_path": "C:\\Users\\rishi\\Desktop\\mlopssprooo\\amazooonnnn\\models\\random_forest_model.pkl"
+}
