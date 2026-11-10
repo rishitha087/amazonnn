@@ -1,8 +1,8 @@
 {
     "pipeline_name": "Amazon Bestsellers Comprehensive 'src' Automation Pipeline",
-    "execution_timestamp": "2026-10-08T07:49:14.011632+00:00",
+    "execution_timestamp": "2026-11-10T05:16:28.110428+00:00",
     "overall_status": "SUCCESS",
-    "total_duration_seconds": 84.12,
+    "total_duration_seconds": 99.29,
     "stages_executed": 12,
     "stages_total": 12,
     "stages": [
@@ -12,7 +12,7 @@
             "script": "validate_data.py",
             "status": "PASSED",
             "return_code": 0,
-            "duration_seconds": 2.55
+            "duration_seconds": 1.24
         },
         {
             "stage": "step_02_preprocess",
@@ -20,7 +20,7 @@
             "script": "preprocess.py",
             "status": "PASSED",
             "return_code": 0,
-            "duration_seconds": 2.81
+            "duration_seconds": 2.2
         },
         {
             "stage": "step_03_preprocess_pipeline",
@@ -28,7 +28,7 @@
             "script": "preprocess_pipeline.py",
             "status": "PASSED",
             "return_code": 0,
-            "duration_seconds": 1.7
+            "duration_seconds": 1.99
         },
         {
             "stage": "step_04_validate_outputs",
@@ -36,7 +36,7 @@
             "script": "validate_outputs.py",
             "status": "PASSED",
             "return_code": 0,
-            "duration_seconds": 0.14
+            "duration_seconds": 0.15
         },
         {
             "stage": "step_05_train_baseline",
@@ -44,7 +44,7 @@
             "script": "train.py",
             "status": "PASSED",
             "return_code": 0,
-            "duration_seconds": 1.88
+            "duration_seconds": 2.07
         },
         {
             "stage": "step_06_evaluate_baseline",
@@ -52,7 +52,7 @@
             "script": "evaluate.py",
             "status": "PASSED",
             "return_code": 0,
-            "duration_seconds": 1.62
+            "duration_seconds": 2.0
         },
         {
             "stage": "step_07_train_mlflow",
@@ -60,7 +60,7 @@
             "script": "train_mlflow.py",
             "status": "PASSED",
             "return_code": 0,
-            "duration_seconds": 56.42
+            "duration_seconds": 71.73
         },
         {
             "stage": "step_08_validate_reproducibility",
@@ -68,7 +68,7 @@
             "script": "validate_reproducibility.py",
             "status": "PASSED",
             "return_code": 0,
-            "duration_seconds": 1.81
+            "duration_seconds": 2.18
         },
         {
             "stage": "step_09_train_registry",
@@ -76,7 +76,7 @@
             "script": "train_registry.py",
             "status": "PASSED",
             "return_code": 0,
-            "duration_seconds": 9.32
+            "duration_seconds": 8.41
         },
         {
             "stage": "step_10_automate_lifecycle",
@@ -84,7 +84,7 @@
             "script": "automate_lifecycle.py",
             "status": "PASSED",
             "return_code": 0,
-            "duration_seconds": 2.43
+            "duration_seconds": 3.29
         },
         {
             "stage": "step_11_generate_registry_report",
@@ -92,7 +92,7 @@
             "script": "generate_registry_report.py",
             "status": "PASSED",
             "return_code": 0,
-            "duration_seconds": 1.88
+            "duration_seconds": 2.34
         },
         {
             "stage": "step_12_predict_inference",
@@ -100,7 +100,7 @@
             "script": "predict.py",
             "status": "PASSED",
             "return_code": 0,
-            "duration_seconds": 1.54
+            "duration_seconds": 1.69
         }
     ]
 }

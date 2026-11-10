@@ -1,10 +1,10 @@
 {
     "registered_model_name": "Amazon_Bestseller_Production_Model",
-    "model_version": 9,
-    "run_id": "73725ffe0eb349d985e9783ed6baa511",
+    "model_version": 12,
+    "run_id": "3fb8ef278dcf4bd0be1a43f8049d48aa",
     "current_stage": "Production",
     "model_type": "RandomForest",
-    "artifact_uri": "models:/m-cd50cce2af864eada762b3ab6c888c68",
+    "artifact_uri": "models:/m-2250b7897f054c2db8f60fd75266c7eb",
     "promotion_decision": "CHAMPION_PROMOTED_TO_PRODUCTION",
     "lifecycle_rule": "Highest Weighted F1 Score (f1_score_weighted) on Unseen Test Partition",
     "parameters": {
@@ -25,6 +25,6 @@
         "roc_auc": 0.8649193548387096
     },
     "preprocessing_dependency": "models/preprocessor.pkl",
-    "timestamp": "2026-10-08T07:50:36.311265+00:00",
+    "timestamp": "2026-11-10T05:18:05.449501+00:00",
     "status": "APPROVED_FOR_PRODUCTION_SERVING"
 }

@@ -1,18 +1,32 @@
 {
-    "dataset": "Amazon Bestselling Books (2009-2019)",
-    "train_samples": 440,
-    "test_samples": 110,
-    "features": [
-        "User Rating",
-        "Reviews_Log",
-        "Price",
-        "Year"
-    ],
-    "feature_dim": 4,
-    "class_mapping": {
-        "Fiction": 0,
-        "Non Fiction": 1
+    "pipeline": "Amazon Bestsellers Production Preprocessing",
+    "validation_status": "PASSED",
+    "matrix_dimensions": {
+        "X_train_shape": [
+            440,
+            4
+        ],
+        "X_test_shape": [
+            110,
+            4
+        ],
+        "y_train_shape": [
+            440
+        ],
+        "y_test_shape": [
+            110
+        ]
     },
-    "test_size": 0.2,
-    "random_state": 42
+    "data_quality": {
+        "nan_count_X_train": 0,
+        "nan_count_X_test": 0,
+        "inf_count_X_train": 0,
+        "inf_count_X_test": 0
+    },
+    "artifacts_status": {
+        "preprocessor.pkl": "EXISTS",
+        "scaler.pkl": "EXISTS",
+        "encoder.pkl": "EXISTS"
+    },
+    "errors": []
 }

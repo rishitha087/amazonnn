@@ -5,7 +5,7 @@
     "total_test_runs": 15,
     "successful_recoveries": 15,
     "recovery_rate_percent": 100.0,
-    "average_duration_ms": 29.12,
+    "average_duration_ms": 12.58,
     "test_results": [
         {
             "scenario": "SCENARIO_1_MISSING_RAW_DATASET",
@@ -13,7 +13,7 @@
             "detected": true,
             "recovered": true,
             "error_detected": "FileNotFoundError: Dataset missing at C:\\Users\\rishi\\Desktop\\mlopssprooo\\amazooonnnn\\data\\raw\\amazon_bestsellers.csv",
-            "duration_ms": 2.7,
+            "duration_ms": 1.0,
             "status": "PASSED"
         },
         {
@@ -22,7 +22,7 @@
             "detected": true,
             "recovered": true,
             "error_detected": "FileNotFoundError: Dataset missing at C:\\Users\\rishi\\Desktop\\mlopssprooo\\amazooonnnn\\data\\raw\\amazon_bestsellers.csv",
-            "duration_ms": 3.13,
+            "duration_ms": 1.0,
             "status": "PASSED"
         },
         {
@@ -31,7 +31,7 @@
             "detected": true,
             "recovered": true,
             "error_detected": "FileNotFoundError: Dataset missing at C:\\Users\\rishi\\Desktop\\mlopssprooo\\amazooonnnn\\data\\raw\\amazon_bestsellers.csv",
-            "duration_ms": 3.32,
+            "duration_ms": 0.0,
             "status": "PASSED"
         },
         {
@@ -40,7 +40,7 @@
             "detected": true,
             "recovered": true,
             "error_detected": "'columns'",
-            "duration_ms": 45.95,
+            "duration_ms": 29.05,
             "status": "PASSED"
         },
         {
@@ -49,7 +49,7 @@
             "detected": true,
             "recovered": true,
             "error_detected": "'columns'",
-            "duration_ms": 83.25,
+            "duration_ms": 29.0,
             "status": "PASSED"
         },
         {
@@ -58,7 +58,7 @@
             "detected": true,
             "recovered": true,
             "error_detected": "'columns'",
-            "duration_ms": 59.68,
+            "duration_ms": 25.0,
             "status": "PASSED"
         },
         {
@@ -67,7 +67,7 @@
             "detected": true,
             "recovered": true,
             "error_detected": "Invalid value 'EXCELLENT_BOOK' for dtype 'float64'",
-            "duration_ms": 15.34,
+            "duration_ms": 11.0,
             "status": "PASSED"
         },
         {
@@ -76,7 +76,7 @@
             "detected": true,
             "recovered": true,
             "error_detected": "Invalid value 'EXCELLENT_BOOK' for dtype 'float64'",
-            "duration_ms": 15.08,
+            "duration_ms": 5.0,
             "status": "PASSED"
         },
         {
@@ -85,7 +85,7 @@
             "detected": true,
             "recovered": true,
             "error_detected": "Invalid value 'EXCELLENT_BOOK' for dtype 'float64'",
-            "duration_ms": 11.99,
+            "duration_ms": 4.0,
             "status": "PASSED"
         },
         {
@@ -94,7 +94,7 @@
             "detected": true,
             "recovered": true,
             "error_detected": "RangeError: User Rating out of bounds [0.0, 5.0]",
-            "duration_ms": 42.49,
+            "duration_ms": 27.11,
             "status": "PASSED"
         },
         {
@@ -103,7 +103,7 @@
             "detected": true,
             "recovered": true,
             "error_detected": "RangeError: User Rating out of bounds [0.0, 5.0]",
-            "duration_ms": 66.29,
+            "duration_ms": 28.6,
             "status": "PASSED"
         },
         {
@@ -112,7 +112,7 @@
             "detected": true,
             "recovered": true,
             "error_detected": "RangeError: User Rating out of bounds [0.0, 5.0]",
-            "duration_ms": 72.24,
+            "duration_ms": 26.0,
             "status": "PASSED"
         },
         {
@@ -121,7 +121,7 @@
             "detected": true,
             "recovered": true,
             "error_detected": "ModelArtifactMissingError: production_model.pkl not found",
-            "duration_ms": 5.51,
+            "duration_ms": 1.0,
             "status": "PASSED"
         },
         {
@@ -130,7 +130,7 @@
             "detected": true,
             "recovered": true,
             "error_detected": "ModelArtifactMissingError: production_model.pkl not found",
-            "duration_ms": 4.02,
+            "duration_ms": 1.0,
             "status": "PASSED"
         },
         {
@@ -139,7 +139,7 @@
             "detected": true,
             "recovered": true,
             "error_detected": "ModelArtifactMissingError: production_model.pkl not found",
-            "duration_ms": 5.77,
+            "duration_ms": 0.0,
             "status": "PASSED"
         }
     ]

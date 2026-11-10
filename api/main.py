@@ -1,7 +1,7 @@
 import time
 from typing import List, Optional, Dict, Any
 from fastapi import FastAPI, HTTPException, status
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, ConfigDict
 
 from api.model_loader import get_model, get_scaler, get_metadata
 from api.preprocessing import preprocess_book_features
@@ -22,10 +22,10 @@ class BookInput(BaseModel):
     price: float = Field(..., alias="Price", ge=0.0, description="Price in USD")
     year: int = Field(..., alias="Year", ge=2000, le=2050, description="Publication or bestseller year")
 
-    class Config:
-        populate_by_name = True
-        extra = "ignore"
-        json_schema_extra = {
+    model_config = ConfigDict(
+        populate_by_name=True,
+        extra="ignore",
+        json_schema_extra={
             "example": {
                 "Name": "10-Day Green Smoothie Cleanse",
                 "Author": "JJ Smith",
@@ -35,6 +35,7 @@ class BookInput(BaseModel):
                 "Year": 2016
             }
         }
+    )
 
 class BatchInput(BaseModel):
     books: List[BookInput]

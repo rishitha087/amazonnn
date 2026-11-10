@@ -1,6 +1,6 @@
 {
     "model_name": "Amazon_Bestseller_Production_Model",
-    "action": "Promoted version 1 to Production (Initial Champion)",
-    "active_production_version": 1,
-    "timestamp": "1794143193.6807847"
+    "action": "Promoted version 5 (F1=0.7859) over version 4 (F1=0.7859)",
+    "active_production_version": 5,
+    "timestamp": "1794143860.6229632"
 }

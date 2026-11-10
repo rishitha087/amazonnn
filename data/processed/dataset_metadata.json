@@ -1,23 +1,25 @@
 {
     "dataset_name": "Amazon Top 50 Bestselling Books (2009-2019)",
-    "source_file": "C:\\Users\\rishi\\Desktop\\mlopssprooo\\amazooonnnn\\data\\raw\\amazon_bestsellers.csv",
-    "total_records": 550,
-    "train_samples": 440,
-    "test_samples": 110,
-    "num_features": 4,
+    "train_shape": [
+        440,
+        4
+    ],
+    "test_shape": [
+        110,
+        4
+    ],
     "raw_features": [
         "User Rating",
         "Reviews",
         "Price",
         "Year"
     ],
-    "engineered_features": [
+    "features": [
         "User Rating",
         "Reviews_Log",
         "Price",
         "Year"
     ],
-    "target_column": "Genre",
     "classes": [
         "Fiction",
         "Non Fiction"
@@ -25,14 +27,6 @@
     "class_mapping": {
         "Fiction": 0,
         "Non Fiction": 1
-    },
-    "train_class_distribution": {
-        "1": 248,
-        "0": 192
-    },
-    "test_class_distribution": {
-        "1": 62,
-        "0": 48
     },
     "random_state": 42,
     "test_size": 0.2

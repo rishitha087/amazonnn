@@ -1,6 +1,6 @@
 {
     "model_name": "Amazon_Bestseller_Production_Model",
-    "run_id": "a06d784a4d00470ab2afcc5ebad1717f",
+    "run_id": "acf42445476f4aeb9b10e0574d80984b",
     "metrics": {
         "accuracy": 0.7909090909090909,
         "precision_weighted": 0.7979805459257513,
